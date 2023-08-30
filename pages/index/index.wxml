@@ -1,17 +1,33 @@
 <view class="container">
-<view>
-<title>GoChat!</title>
-</view>
-<view class="btn">
-  <view class="button-container">
-    <button bindtap="navigateToPage1" type="primary">文本预测</button>
+  <view class="logo"> 
+    <image src="../../image/home/logo-shadow.svg" mode=""/>
   </view>
-  <view class="button-container">
-    <button bindtap="navigateToPage2" type="primary">相似度检测</button>
+
+  <view class="intro">
+    <view class="title">
+      <title>GoChat!</title>
+    </view>
+    <view class="dis">
+      <p class="text">Blazing Ai Test Tools Collections</p>
+    </view>
+    <p class="tagline">A simple but powerful ai tools. It's fast!</p>
+
   </view>
-  <view class="button-container">
-    <button bindtap="navigateToPage3" type="primary">聊天机器人</button>
-  </view>
-</view>
+
+  <view class="select">
   
+    <view class="border">
+      <button class="btn" bindtap="navigateToPage1" theme="light" size="large">Text Predict</button>
+    </view>
+
+    <view class="border">
+      <button class="btn" bindtap="navigateToPage2" theme="light" size="large">Similarity Check</button>
+    </view>
+
+    <view class="border">
+      <button class="btn" bindtap="navigateToPage3" theme="light" size="large">Ai Chat Box</button>
+    </view>
+
+  </view>
+
 </view>
