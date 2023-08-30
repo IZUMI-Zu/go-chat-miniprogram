@@ -1,0 +1,17 @@
+<view class="container">
+<view>
+<title>GoChat!</title>
+</view>
+<view class="btn">
+  <view class="button-container">
+    <button bindtap="navigateToPage1" type="primary">文本预测</button>
+  </view>
+  <view class="button-container">
+    <button bindtap="navigateToPage2" type="primary">相似度检测</button>
+  </view>
+  <view class="button-container">
+    <button bindtap="navigateToPage3" type="primary">聊天机器人</button>
+  </view>
+</view>
+  
+</view>

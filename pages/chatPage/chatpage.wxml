@@ -1,0 +1,15 @@
+<!--pages/chatPage/chatpage.wxml-->
+<view class="container">
+  <view class="input-container">
+    <input bindinput="onInput" placeholder="在此输入文本" type="text">{{inputText}}</input>
+  </view>
+
+  <view class="button-container">
+    <button bindtap="onCheck" type="primary">检测</button>
+  </view>
+
+  <view class="output-container">
+    <textarea value="{{outputText}}" disabled></textarea>
+  </view>
+  <button bindtap="navigateBackToMain" type="primary">返回主页面</button>
+</view>

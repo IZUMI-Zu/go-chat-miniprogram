@@ -1,0 +1,32 @@
+.container {
+
+  height: 100vh; /* 确保容器占据整个视窗高度 */
+}
+.btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* 确保容器占据整个视窗高度 */
+}
+/* 标题样式 */
+title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333; /* 设置标题颜色 */
+  margin-top: 330px;
+  margin-bottom: 20px; /* 控制标题下方的间距 */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* 按钮水平居中对齐 */
+  margin-top: 20px; /* 控制按钮上方的间距 */
+}
+
+/* 按钮样式 */
+button {
+  width: 200px;
+  height: 40px;
+  margin: 10px; /* 控制按钮之间的间距 */
+}
