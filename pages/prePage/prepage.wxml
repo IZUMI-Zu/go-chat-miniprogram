@@ -1,4 +1,4 @@
-<view class="container">
+<!-- <view class="container">
   <view class="input-container">
     <input bindinput="onInput" placeholder="在此输入文本" type="text">{{inputText}}</input>
   </view>
@@ -12,4 +12,34 @@
     <textarea value="{{outputText}}" disabled></textarea>
   </view>
   <button bindtap="navigateBackToMain" type="primary">返回主页面</button>
+</view> -->
+
+<view class="container">
+  <view class="head">
+    <text>Text Predict</text>
+  </view>
+
+  <view class="input-box">
+    <input class="input-place" bindinput="onInput" placeholder=" Input the sentence here " type="text">
+    {{inputText}}</input>
+    <button class="botton-input" bindtap="onCheck" type="light">
+        <image src="../../image/common/right.svg" alt=""/>
+    </button>
+  </view>
+
+  <view class="output" >
+    <text class="block-title">OUTPUT: \n </text>
+
+    <textarea value="{{outputText}}" disabled></textarea>
+  </view>
+
+  <view class="help">
+    <text class="block-title">NOTE \n </text>
+    <text>This page is the tools to check the emotion of
+      one pargaph of a sentence. \n </text>
+    <text>To use this function just enter the sentence you
+      want to check in the box and then click the button. \n</text>
+    <text>The output will be a number between 0-1
+      the bigger the positive the sentence will be.</text>
+  </view>
 </view>
