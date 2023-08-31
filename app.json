@@ -12,8 +12,6 @@
     "navigationBarTitleText": "GoChat",
     "navigationBarTextStyle": "black"
   },
-  "renderer": "skyline",
-  "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents"
 }

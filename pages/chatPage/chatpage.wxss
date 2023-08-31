@@ -6,8 +6,10 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #ffff;
   padding: 20rpx;
+  padding-top: 0%;
+  padding-bottom: 0%;
 }
 
 .head {
@@ -23,7 +25,7 @@
   line-height: 40px;
   font-size: 28px;
   margin-bottom: 30%;
-  margin-top: 5%;
+  margin-top: 5vh;
 }
 
 .output {

@@ -2,6 +2,8 @@
   height: 100vh; /* 确保容器占据整个视窗高度 */
   display: flex;
   justify-content: flex;
+  margin: 0;
+  padding: 0;
 }
 
 /* 标题样式 */
