@@ -23,6 +23,7 @@
   line-height: 40px;
   font-size: 28px;
   margin-bottom: 30%;
+  margin-top: 5%;
 }
 
 .output {

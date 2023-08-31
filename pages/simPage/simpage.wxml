@@ -1,5 +1,5 @@
 <!--pages/simPage/simpage.wxml-->
-<view class="container">
+<!-- <view class="container">
   <view class="input-container">
     <input bindinput="onInput1" placeholder="在此输入文本" type="text">{{inputText1}}</input>
   </view>
@@ -16,4 +16,37 @@
     <textarea value="{{outputText}}" disabled></textarea>
   </view>
   <button bindtap="navigateBackToMain" type="primary">返回主页面</button>
+</view> -->
+
+<view class="container">
+  <view class="head">
+    <text>Similarity Check</text>
+  </view>
+
+  <view class="input-box">
+    <view class="input-area">
+      <input class="input-place input-fisrt" bindinput="onInput1" placeholder=" Input the sentence here " type="text"> {{inputText1}}</input>
+      <input class="input-place" bindinput="onInput2" placeholder=" Input the sentence here " type="text"> {{inputText2}}</input>
+    </view>
+    <button class="botton-input" bindtap="onCheck" type="light">
+      <image src="../../image/common/right.svg" alt="check" />
+    </button>
+  </view>
+
+  <view class="output">
+    <text class="block-title">OUTPUT: \n </text>
+
+    <textarea value="{{outputText}}" disabled></textarea>
+  </view>
+
+  <view class="help">
+    <text class="block-title">NOTE \n </text>
+    <text>This page provides the tools to check the similarity between two pieces of text. \n </text>
+    <text>To use this function, simply input the first text in the first box, and the second text in the second box, then click the button. \n</text>
+    <text>The output will be a number between 0-1,
+      indicating the degree of similarity between the inputs. A score closer to 1 suggests
+      a higher level of similarity.\n</text>
+  </view>
+
+
 </view>
