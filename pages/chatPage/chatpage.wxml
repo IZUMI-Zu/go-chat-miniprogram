@@ -1,15 +1,31 @@
 <!--pages/chatPage/chatpage.wxml-->
+
 <view class="container">
-  <view class="input-container">
-    <input bindinput="onInput" placeholder="在此输入文本" type="text">{{inputText}}</input>
+  <view class="head">
+    <text>Chat Box</text>
   </view>
 
-  <view class="button-container">
-    <button bindtap="onCheck" type="primary">检测</button>
+  <view class="input-box">
+    <input class="input-place" bindinput="onInput" placeholder=" Input the sentence here " type="text">
+    {{inputText}}</input>
+    <button class="botton-input" bindtap="onCheck" type="light">
+        <image src="../../image/common/right.svg" alt="check"/>
+    </button>
   </view>
 
-  <view class="output-container">
+  <view class="output" >
+    <text class="block-title">OUTPUT: \n </text>
+
     <textarea value="{{outputText}}" disabled></textarea>
   </view>
-  <button bindtap="navigateBackToMain" type="primary">返回主页面</button>
+
+  <view class="help">
+    <text class="block-title">NOTE \n </text>
+    <text>This page contains the tools to interact with a
+      simple AI chat box. \n </text>
+    <text>To use this function, simply type the message or statement
+      you want to communicate to the AI in the input field and then click the "Send" button. \n</text>
+    <text>The AI will process your input and respond within seconds on the content of your input. \n</text>
+  </view>
+
 </view>

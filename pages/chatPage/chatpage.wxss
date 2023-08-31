@@ -1,4 +1,6 @@
 /* pages/chatPage/chatpage.wxss */
+/**index.wxss**/
+/* 容器样式 */
 .container {
   display: flex;
   flex-direction: column;
@@ -9,48 +11,133 @@
   padding: 20rpx;
 }
 
-/* 输入文本框样式 */
-.input-container {
+.head {
+  direction: ltr;
+  font-synthesis: style;
+  box-sizing: border-box;
+  margin: 0;
+  overflow-wrap: break-word;
+  position: relative;
+  font-weight: 600;
+  outline: none;
+  letter-spacing: -.02em;
+  line-height: 40px;
+  font-size: 28px;
+  margin-bottom: 30%;
+}
+
+.output {
+  --vp-custom-block-font-size: 14px;
+  --vp-custom-block-tip-border: rgba(12, 124, 108, .5);
+  --vp-custom-block-tip-text: rgb(12, 124, 108);
+  --vp-custom-block-tip-bg: rgba(18, 181, 157, 0.048);
+  font-weight: 400;
+  direction: ltr;
+  font-synthesis: style;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 16px 16px 8px;
+  line-height: 24px;
+  font-size: var(--vp-custom-block-font-size);
+  border-color: var(--vp-custom-block-tip-border);
+  color: var(--vp-custom-block-tip-text);
+  background-color: var(--vp-custom-block-tip-bg);
+  margin: 8px 0;
+  width: 100%;
+  height: 10vh;
+}
+
+.help {
+  --vp-custom-block-font-size: 14px;
+  --vp-custom-block-tip-border: rgba(12, 124, 108, .5);
+  --vp-custom-block-tip-text: rgb(12, 124, 108);
+  --vp-custom-block-tip-bg: rgba(18, 181, 157, .1);
+  font-weight: 400;
+  direction: ltr;
+  font-synthesis: style;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 16px 16px 8px;
+  line-height: 24px;
+  font-size: var(--vp-custom-block-font-size);
+  border-color: var(--vp-custom-block-tip-border);
+  color: var(--vp-custom-block-tip-text);
+  background-color: var(--vp-custom-block-tip-bg);
+  margin: 8px 0;
+  width: 100%;
+}
+
+.block-title {
+  --vp-custom-block-tip-text: rgb(12, 124, 108);
+  direction: ltr;
+  font-synthesis: style;
+  font-size: var(--vp-custom-block-font-size);
+  color: var(--vp-custom-block-tip-text);
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+}
+
+.text {
+  font-weight: 400;
+  direction: ltr;
+  font-synthesis: style;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  margin: 8px 0;
+  line-height: 24px;
+}
+
+.input-box {
+  --vp-custom-block-tip-border: rgba(12, 124, 108, .5);
+  box-sizing: border-box;
+  display: flex;
+  min-width: 0px;
+  border-radius: 6px;
+  border-color: var(--vp-custom-block-tip-border);
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
   width: 100%;
   margin-bottom: 20rpx;
 }
 
-input {
-  width: 100%;
-  border: 1rpx solid #ccc;
+.input-place {
+  width: 80%;
+  height: 35px;
+  box-sizing: border-box;
+  flex-direction: column;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border: 1rpx solid rgba(15, 5, 5, 0.329);
   border-radius: 5rpx;
   padding: 5rpx;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 7%;
 }
 
-/* 检测按钮样式 */
-.button-container {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20rpx;
-}
-
-button {
-  background-color: #007aff;
-  color: #fff;
-  border: none;
-  border-radius: 5rpx;
-  padding: 10rpx 20rpx;
-}
-
-/* 输出文本框样式 */
-.output-container {
-  width: 100%;
-}
-.output-container textarea{
-  font-size: 12px;
-}
-
-textarea {
-  width: 100%;
-  height: 200rpx;
-  border: 1rpx solid #ccc;
-  border-radius: 5rpx;
-  padding: 10rpx;
-  font-size: 14rpx;
-  resize: none;
+.botton-input {
+  touch-action: manipulation;
+  line-height: inherit;
+  font-family: inherit;
+  border: 0;
+  font-weight: 500;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  border: 1rpx solid rgba(15, 5, 5, 0.329);
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 35px;
+  background: transparent;
+  transition: border-color .25s;
+  pointer-events: auto;
 }
