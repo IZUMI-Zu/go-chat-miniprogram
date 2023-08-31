@@ -1,5 +1,4 @@
 /* pages/chatPage/chatpage.wxss */
-/**index.wxss**/
 /* 容器样式 */
 .container {
   display: flex;
