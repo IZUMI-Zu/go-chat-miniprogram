@@ -92,6 +92,7 @@ title {
   margin: 0 32rpx 32rpx;
   padding: 1%;
   margin-top: 3vh;
+  padding-top: 0;
 }
 
 .btn {
